@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/Conversion"
+        android:title="@string/Conversion"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/Shopping"
+        android:title="@string/Shopping"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/NM"
+        android:title="@string/Language"
+        app:showAsAction="always">
+
+        <menu>
+
+
+            <item android:id = "@+id/AR"
+                android:title="AR"
+                ></item>
+
+
+            <item android:id = "@+id/EN"
+                android:title="EN"
+                ></item>
+
+
+        </menu>
+
+
+    </item>
+
+
+
+</menu>

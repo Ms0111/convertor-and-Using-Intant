@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false"></string>
+    <string name = "Conversion" translatable="false">Conversion</string>
+    <string name = "Shopping" translatable="false">Shopping</string>
+    <string name="Language" translatable="false">Language</string>
+
+    <string name="Temperature" translatable="false">Temperature conversion</string>
+    <string name="Distance" translatable="false">Distance conversion</string>
+
+    <string name="CelsiusToFahrenheit" translatable="false">Celsius to Fahrenheit</string>
+    <string name="FahrenheitTOCelsius" translatable="false">Fahrenheit to Celsius</string>
+
+    <string name="MilestoKm" translatable="false">Miles to Km</string>
+    <string name="KmtoMiles" translatable="false">Km to Miles</string>
+
+    <string name="CB" translatable="false">Convert</string>
+    <string name="Result" translatable="false">Result</string>
+</resources>

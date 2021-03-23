@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false"></string>
+    <string name = "Conversion" translatable="false">التحويل</string>
+    <string name = "Shopping" translatable="false">الشراء</string>
+    <string name="Language" translatable="false">اللغة</string>
+
+    <string name="Temperature" translatable="false">تحويل درجة الحرارة</string>
+    <string name="Distance" translatable="false">تحويل المسافة</string>
+
+    <string name="CelsiusToFahrenheit" translatable="false">مئوية إلى فهرنهايت</string>
+    <string name="FahrenheitTOCelsius" translatable="false">فهرنهايت إلى مئوية</string>
+
+    <string name="MilestoKm" translatable="false">ميل الى كيلو ميل</string>
+    <string name="KmtoMiles" translatable="false">كيلو ميل الى ميل</string>
+
+    <string name="CB" translatable="false">تحويل</string>
+    <string name="Result" translatable="false">النتيجة</string>
+
+    <string name="userName" translatable="false">اسم المستخدم</string>
+    <string name="pass" translatable="false">كلمة المرور</string>
+    <string name="wantToBuy" translatable="false">الرغبة في شراء؟</string>
+    <string name="smartPhones" translatable="false">هواتف ذكية</string>
+    <string name="digitalPanels" translatable="false">لوحات رقمية</string>
+    <string name="payBy" translatable="false">الدفع بواسطة</string>
+    <string name="creditCard" translatable="false">credit card</string>
+    <string name="paiementWhenRecieving" translatable="false">الدفع عند الاستلام</string>
+    <string name="cheque" translatable="false">شيك</string>
+    <string name="sendTheRequest" translatable="false">ارسال الطلب</string>
+
+</resources>
