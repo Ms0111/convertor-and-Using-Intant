@@ -1,22 +1,26 @@
 package com.example.labwork;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.content.res.Resources;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Conversion extends AppCompatActivity {
       String conversionType = "";
+      Button convBu;
+    AlertDialog.Builder builder;
 
-//    RadioButton radioButton2 = findViewById(R.id.radioButton);
+    //    RadioButton radioButton2 = findViewById(R.id.radioButton);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,12 +44,55 @@ public class Conversion extends AppCompatActivity {
         radioChecked();
 
 
+
+
+        convBu = (Button) findViewById(R.id.button);
+        builder = new AlertDialog.Builder(this);
+        convBu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //Setting message manually and performing action on button click
+                builder.setMessage(R.string.alertMessage)
+                        .setCancelable(false)
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                //buClick();
+                                //finish();
+                                dialog.cancel();
+                                calculat();
+
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                //  Action for 'NO' Button
+                                dialog.cancel();
+
+                            }
+                        });
+                //Creating dialog box
+                AlertDialog alert = builder.create();
+                //Setting the title manually
+                alert.setTitle(R.string.alertTitle);
+                alert.show();
+            }
+        });
+
+
+
+
+
+
+
+
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.convmen, menu);
+        inflater.inflate(R.menu.convmenu, menu);
         return true;
     }
 
@@ -148,7 +195,41 @@ public class Conversion extends AppCompatActivity {
 
     }*/
 
-    public void buClick(View view) {
+    public void calculat() {
+
+        //AlertDail();
+
+
+
+//        AlertDialog.Builder builder = null;
+//        //Setting message manually and performing action on button click
+//        builder.setMessage(R.string.alertMessage)
+//                .setCancelable(false)
+//                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int id) {
+//                        finish();
+//                        Toast.makeText(getApplicationContext(),"you choose yes action for alertbox",
+//                                Toast.LENGTH_SHORT).show();
+//                    }
+//                })
+//                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int id) {
+//                        //  Action for 'NO' Button
+//                        dialog.cancel();
+//                        Toast.makeText(getApplicationContext(),"you choose no action for alertbox",
+//                                Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+//        //Creating dialog box
+//        AlertDialog alert = builder.create();
+//        //Setting the title manually
+//        alert.setTitle(R.string.alertTitle);
+//        alert.show();
+
+
+
+
+
         TextView result = findViewById(R.id.resultTextView);
         EditText editText = findViewById(R.id.editTextNumber);
         double input = Double.parseDouble(editText.getText().toString());
@@ -201,4 +282,40 @@ public class Conversion extends AppCompatActivity {
 
 
     }
+
+
+//    public void AlertDail(){
+//
+//        AlertDialog.Builder builder = null;
+//        //Setting message manually and performing action on button click
+//        builder.setMessage(R.string.alertMessage)
+//        .setCancelable(false)
+//        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//public void onClick(DialogInterface dialog, int id) {
+//        finish();
+//        Toast.makeText(getApplicationContext(),"you choose yes action for alertbox",
+//        Toast.LENGTH_SHORT).show();
+//        }
+//        })
+//        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+//public void onClick(DialogInterface dialog, int id) {
+//        //  Action for 'NO' Button
+//        dialog.cancel();
+//        Toast.makeText(getApplicationContext(),"you choose no action for alertbox",
+//        Toast.LENGTH_SHORT).show();
+//        }
+//        });
+//        //Creating dialog box
+//        AlertDialog alert = builder.create();
+//        //Setting the title manually
+//        alert.setTitle(R.string.alertTitle);
+//        alert.show();
+//
+//
+//
+//
+//
+//
+//        }
+
 }

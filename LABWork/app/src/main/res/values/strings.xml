@@ -21,11 +21,17 @@
     <string name="wantToBuy" translatable="false">want to buy</string>
     <string name="smartPhones" translatable="false">Smart phones</string>
     <string name="digitalPanels" translatable="false">digital panels</string>
-    <string name="payBy" translatable="false">Pay by</string>
+    <string name="payBy" translatable="false">payment method</string>
     <string name="creditCard" translatable="false">credit card</string>
     <string name="paiementWhenRecieving" translatable="false">Paiement when recieving</string>
     <string name="cheque" translatable="false">Cheque</string>
     <string name="sendTheRequest" translatable="false">Send the request</string>
+
+    <string name="alertMessage" translatable="false">Are you sure you entered correct information and want to continue?</string>
+    <string name="alertTitle" translatable="false">Verification letter!</string>
+
+    <string name="support" translatable="false">Support</string>
+    <string name="about" translatable="false">About</string>
 
 
 </resources>

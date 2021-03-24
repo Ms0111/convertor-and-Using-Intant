@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu1, menu);
+        inflater.inflate(R.menu.main_menu, menu);
         return true;
     }
 
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.Shopping:
                 findViewById(R.id.Shopping).setBackgroundColor(0xff000000);
-                startActivity(new Intent(this, Conversion.class));
+                startActivity(new Intent(this, Shoopping.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

@@ -23,9 +23,16 @@
     <string name="smartPhones" translatable="false">هواتف ذكية</string>
     <string name="digitalPanels" translatable="false">لوحات رقمية</string>
     <string name="payBy" translatable="false">الدفع بواسطة</string>
-    <string name="creditCard" translatable="false">credit card</string>
+    <string name="creditCard" translatable="false">بطاقة ائتمانية</string>
     <string name="paiementWhenRecieving" translatable="false">الدفع عند الاستلام</string>
     <string name="cheque" translatable="false">شيك</string>
     <string name="sendTheRequest" translatable="false">ارسال الطلب</string>
+
+    <string name="alertMessage" translatable="false">هل انت متأكد من انك ادخلت بيانات صحيحة وتريد المتابعة؟</string>
+    <string name="alertTitle" translatable="false">خطاب التحقق!</string>
+
+    <string name="support" translatable="false">الدعم</string>
+    <string name="about" translatable="false">حول</string>
+
 
 </resources>

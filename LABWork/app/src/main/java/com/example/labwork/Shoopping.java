@@ -30,28 +30,29 @@ public class Shoopping extends AppCompatActivity {
         RadioButton radioButton3 = findViewById(R.id.radioButton4);
 
         ArrayList values = new ArrayList<String>();
-        values.add("User Name: " + un.getText());
+        values.add(getString(R.string.userName) + un.getText() + "\n");
 
         CheckBox[] checkboxes = {checkBox1, checkBox2};
         RadioButton[] radioButtons = {radioButton1, radioButton2, radioButton3};
 
         boolean x = false;
         for (int i = 0; i < checkboxes.length; i++){
-            if(!x){values.add(getString(R.string.wantToBuy)+":\n"); x = true;}
+            if(!x){values.add(getString(R.string.wantToBuy) + ":"); x = true;}
 
 
-            if(checkboxes[i].isChecked()){values.add(checkboxes[i].getText() + "\n");}
+            if(checkboxes[i].isChecked()){values.add(checkboxes[i].getText());}
 
 
 
         }
+        values.add("\n");
 
 
         x = false;
 
 
         for (int i = 0; i < radioButtons.length; i++){
-            if(!x){values.add(getString(R.string.wantToBuy)+":"); x = true;}
+            if(!x){values.add(getString(R.string.payBy) + ":"); x = true;}
 
 
             if(radioButtons[i].isChecked()){values.add(radioButtons[i].getText() + "\n");}

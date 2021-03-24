@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
 
     <item
         android:id="@+id/Conversion"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:title="@string/Conversion"
         app:showAsAction="always" />
 
@@ -21,22 +26,21 @@
 
         <menu>
 
+            <item
+                android:id="@+id/AR"
+                android:title="AR"></item>
 
-            <item android:id = "@+id/AR"
-                android:title="AR"
-                ></item>
 
+            <item
+                android:id="@+id/EN"
+                android:title="EN"></item>
 
-            <item android:id = "@+id/EN"
-                android:title="EN"
-                ></item>
 
 
         </menu>
 
 
     </item>
-
 
 
 </menu>
